@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 <head>
@@ -225,3 +226,232 @@
   </script>
 </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Supreem Rijal — Portfolio</title>
+  <meta name="description" content="Supreem Rijal — Tech Enthusiast & Creative Web Developer from Nepal">
+  <style>
+    :root{
+      --bg:#0b0f13;
+      --card:#0f1720;
+      --muted:#9aa4b2;
+      --accent:#7c5cff;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #07101a 100%);color:#e6eef6}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+    /* NAV */
+    header{position:sticky;top:12px;backdrop-filter:blur(6px);z-index:40}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{font-weight:700;letter-spacing:0.6px}
+    .navlinks{display:flex;gap:16px}
+    .btn{padding:8px 12px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);cursor:pointer}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:center;padding:64px 0}
+    .hero-left h1{font-size:36px;margin:0}
+    .tagline{color:var(--accent);font-weight:600;margin-top:8px}
+    .lead{color:var(--muted);margin-top:16px;line-height:1.6}
+    .cta{display:flex;gap:12px;margin-top:22px}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.03)}
+    .profile{display:flex;flex-direction:column;gap:14px;align-items:center}
+    .avatar{width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#2fb0ff);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:32px;color:#07101a;border:4px solid rgba(255,255,255,0.06)}
+    .small{color:var(--muted);font-size:13px}
+
+    /* Sections */
+    section{padding:56px 0}
+    h2{margin:0 0 14px 0}
+    .about-grid{display:grid;grid-template-columns:1fr 340px;gap:28px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);font-size:14px}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 8px 0}
+    .muted{color:var(--muted)}
+
+    /* Contact */
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:10px;color:inherit}
+    button.primary{background:linear-gradient(90deg,var(--accent),#39b0ff);border:none;padding:10px 14px;border-radius:10px;color:#04111a;font-weight:700;cursor:pointer}
+
+    /* footer */
+    footer{padding:28px 0;color:var(--muted);text-align:center}
+
+    /* animations */
+    .fade-up{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+    .in-view{opacity:1;transform:translateY(0)}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .hero-left{order:2}
+      .profile{order:1}
+      .about-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header class="container">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">Supreem Rijal</div>
+        <div class="small">Tech Enthusiast & Creative Web Developer</div>
+      </div>
+      <div class="navlinks">
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#skills">Skills</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="fade-up">Hi, I’m <span style="color:var(--accent)">Supreem</span>.</h1>
+        <div class="tagline fade-up">Tech Enthusiast & Creative Web Developer from Nepal.</div>
+        <p class="lead fade-up">I build clean, modern websites and web apps. I also offer website development services for individuals and small businesses — turning ideas into beautiful, usable products.</p>
+        <div class="cta fade-up">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="mailto:rijalsupreem222@gmail.com">Email Me</a>
+        </div>
+      </div>
+
+      <aside class="card profile fade-up">
+        <img src="avatar.jpg" alt="Supreem Rijal" class="avatar">
+        <div style="text-align:center">
+          <div style="font-weight:700">Supreem Rijal</div>
+          <div class="small">BCA Student • Web Developer</div>
+          <div class="small">rijalsupreem222@gmail.com</div>
+          <div style="margin-top:10px"><a class="small" href="https://github.com/supreem121" target="_blank">GitHub: supreem121</a></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade-up">
+      <div class="card">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p class="muted">I am Supreem — a tech enthusiast and creative web developer from Nepal. I enjoy building websites, learning new web technologies, and helping small businesses go online. I take projects from concept to launch and provide maintenance and updates as part of my service.</p>
+            <p class="muted"><strong>My Business:</strong> I create websites for others — personal portfolios, small e-commerce sites, and informational pages for local businesses. I handle design, development, and deployment so clients can focus on their work.</p>
+          </div>
+          <div>
+            <div class="card">
+              <h3>Quick Info</h3>
+              <p class="small"><strong>Location:</strong> Nepal</p>
+              <p class="small"><strong>Availability:</strong> Freelance / Student Projects</p>
+              <p class="small"><strong>Services:</strong> Web Design, Development, Hosting Setup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="fade-up">
+      <h2>Skills</h2>
+      <div class="card">
+        <div class="skills">
+          <div class="skill">HTML & CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Responsive Design</div>
+          <div class="skill">PHP & MySQL</div>
+          <div class="skill">Git & GitHub</div>
+          <div class="skill">Figma (Design)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-up">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project card">
+          <h3>FurniShop (Example)</h3>
+          <p class="muted">E-commerce demo for furniture — built with HTML, PHP, and MySQL. (Project from college)</p>
+          <p><a href="#">View Repo</a></p>
+        </div>
+        <div class="project card">
+          <h3>SRSellers</h3>
+          <p class="muted">Clothing store project with cart and user auth (college project).</p>
+          <p><a href="#">View Repo</a></p>
+        </div>
+        <div class="project card">
+          <h3>Personal Portfolio</h3>
+          <p class="muted">This portfolio template (dark theme) — customizable and responsive.</p>
+          <p><a href="#">View Source</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-up">
+      <h2>Contact Me</h2>
+      <div class="card">
+        <p class="muted">Want a website, help with a project, or just to say hi? Send a message and I will reply via email.</p>
+        <form onsubmit="sendMail(event)">
+          <input id="name" placeholder="Your name" required>
+          <input id="email" placeholder="Your email" required>
+          <textarea id="message" rows="5" placeholder="Message" required></textarea>
+          <button class="primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <div class="card">
+      <small>© <span id="year"></span> Supreem Rijal — Built with ❤️.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add('in-view');
+      });
+    },{threshold:0.15});
+    document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (ev)=>{
+        ev.preventDefault();
+        const tgt = document.querySelector(a.getAttribute('href'));
+        if(tgt) tgt.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+
+    function sendMail(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const subject = encodeURIComponent('Website contact from ' + name);
+      const body = encodeURIComponent('From: ' + name + ' ('+email+')\n\n' + message);
+      window.location.href = 'mailto:rijalsupreem222@gmail.com?subject='+subject+'&body='+body;
+    }
+  </script>
+</body>
+</html>
+>>>>>>> 2417d29138f68f04e5fb8c0e6acc838356366f21
